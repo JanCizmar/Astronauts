@@ -1,0 +1,71 @@
+{
+  "name": "Astronauts-frontend",
+  "version": "0.0.1",
+  "description": "Astronauts frontend",
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/JanCizmar/Astronauts/tree/master/frontend"
+  },
+  "author": "Team43-2018",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/JanCizmar/Astronauts/issues"
+  },
+  "homepage": "https://github.com/JanCizmar/Astronauts/",
+  "engines": {
+    "node": ">=4.3"
+  },
+  "devDependencies": {
+    "babel-core": "6.25.0",
+    "babel-loader": "7.1.1",
+    "babel-preset-env": "^1.6.0",
+    "babel-preset-react": "^6.24.1",
+    "clean-webpack-plugin": "0.1.17",
+    "css-loader": "^0.28.7",
+    "cypress": "^3.0.1",
+    "enzyme": "^3.3.0",
+    "enzyme-adapter-react-16": "^1.1.1",
+    "enzyme-to-json": "^3.3.4",
+    "extract-text-webpack-plugin": "3.0.1",
+    "html-loader": "0.4.5",
+    "html-webpack-plugin": "2.29.0",
+    "jest": "^23.1.0",
+    "node-sass": "^4.9.0",
+    "react-test-renderer": "^16.4.0",
+    "sass-loader": "^7.0.1",
+    "style-loader": "^0.19.0",
+    "file-loader": "^1.1.11",
+    "url-loader": "^1.0.1",
+    "webpack": "^3.3.0",
+    "webpack-dev-server": "2.9.1",
+    "webpack-merge": "4.1.0"
+  },
+  "dependencies": {
+    "babel-jest": "^23.0.1",
+    "babel-preset-stage-2": "^6.24.1",
+    "bootstrap-sass": "^3.3.7",
+    "create-react-class": "^15.6.3",
+    "file-loader": "^1.1.11",
+    "react": "16.2.0",
+    "react-16-bootstrap-date-picker": "^5.1.2",
+    "react-bootstrap": "^0.32.1",
+    "react-dom": "16.2.0",
+    "react-loading": "^2.0.2",
+    "react-redux": "^5.0.7",
+    "react-router-dom": "4.2.2",
+    "react-router-enzyme-context": "^1.2.0",
+    "react-select": "^2.0.0-beta.6",
+    "redux": "^4.0.0",
+    "redux-logger": "^3.0.6",
+    "redux-promise-middleware": "^5.1.1",
+    "redux-thunk": "^2.3.0",
+    "styled-components": "3.1.6",
+    "webfontloader": "1.6.28"
+  },
+  "scripts": {
+    "build": "webpack --config webpack.prod.js",
+    "start": "webpack-dev-server --config webpack.dev.js",
+    "test": "jest"
+  }
+}
