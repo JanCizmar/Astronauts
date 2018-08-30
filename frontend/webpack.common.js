@@ -6,6 +6,12 @@ const ExtractTextPlugin  = require("extract-text-webpack-plugin");
 const HtmlWebpackPlugin  = require('html-webpack-plugin');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
 
+let API_URL = {
+    production: JSON.stringify('http://chlupac.com:3000'),
+    development: JSON.stringify('http://localhost:3000')
+};
+// check environment mode
+let environment = process.env.NODE_ENV === 'production' ? 'production' : 'development';
 
 
 module.exports = {
@@ -76,6 +82,9 @@ module.exports = {
             filename: 'index.html',
             inject: 'body'
         }),
-        new ExtractTextPlugin("styles/app.css")
+        new ExtractTextPlugin("styles/app.css"),
+        new webpack.DefinePlugin({
+            'API_URL': API_URL[environment]
+        })
     ]
 };

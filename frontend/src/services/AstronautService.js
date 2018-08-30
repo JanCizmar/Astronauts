@@ -4,7 +4,7 @@ import HttpService from "./HttpService";
 
 export default class AstronautService {
     static baseURL() {
-        return "http://localhost:3000/astronauts";
+        return HttpService.apiURL() + "/astronauts";
     }
 
     static create(astronaut) {
