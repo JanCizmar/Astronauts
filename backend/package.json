@@ -17,7 +17,7 @@
   "scripts": {
     "test": "set NODE_ENV=test&& mocha --timeout 100000 --exit",
     "start": "node ./index.js",
-    "devstart": "nodemon ./index.js",
+    "devstart": "nodemon ./index.js"
   },
   "dependencies": {
     "bcryptjs": "2.4.3",
